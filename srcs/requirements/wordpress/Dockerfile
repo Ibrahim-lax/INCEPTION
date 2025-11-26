@@ -4,7 +4,7 @@ FROM debian:bookworm
 RUN apt-get update && apt-get upgrade -y
 
 
-RUN apt-get install -y curl php php8.2-fpm php-mysql
+RUN apt-get install -y curl php php8.2-fpm php-mysql mariadb-client php-redis
 
 
 COPY ./conf/wp_conf.sh /
